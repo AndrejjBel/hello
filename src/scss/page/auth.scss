@@ -1,0 +1,143 @@
+.page-auth {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.auth-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1152px;
+    margin: auto;
+    position: relative;
+    // margin-top: auto;
+    // margin-bottom: auto;
+
+    &__warning {
+        // display: none;
+        position: absolute;
+        top: 0;
+        left: 20%;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--orange-color);
+    }
+
+	&__brand {
+        font-style: normal;
+        font-weight: 800;
+        color: var(--color-primary);
+        margin-left: 214px;
+
+        &__title {
+            font-size: 100px;
+            line-height: 121px;
+        }
+
+        &__description {
+            font-size: 42px;
+            line-height: 62px;
+        }
+	}
+
+	&__form {
+        display: flex;
+        flex-direction: column;
+        height: 480px;
+        padding: 40px 43px 30px 43px;
+        background: var(--color-bg-gen);
+        border-radius: 10px 0px 0px 10px;
+
+	}
+
+	&__form__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: var(--color-bg);
+
+	}
+
+	&__form__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: auto;
+
+        & label {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: var(--color-label);
+        }
+
+        & input {
+            width: 300px;
+            height: 60px;
+            background: var(--color-bg-input);
+            border-radius: 5px;
+            border: none;
+            padding: 20px 6px 6px;
+        }
+
+	}
+
+}
+
+.form-item {
+    position: relative;
+
+}
+
+.form-button {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-label);
+    background: var(--color-bg-input);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 35px;
+
+    & a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        padding: 9px;
+        color: var(--color-label);
+    }
+
+    & button {
+        background: var(--color-bg-btn);
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+        color: var(--text-color);
+        cursor: pointer;
+    }
+}
+
+.notification {
+    margin-bottom: 10px;
+
+    & p {
+        margin: 0;
+        padding: 0;
+    }
+}

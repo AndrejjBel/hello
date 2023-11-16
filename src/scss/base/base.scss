@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 14px;
+    color: var(--color-primary);
+}
+
+input, textarea {
+    outline: none;
+    appearance: none;
+}
+
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
+a:active, a:focus {
+  outline: none !important;
+}
+a::-moz-focus-inner {
+  border: 0 !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+	-webkit-box-shadow:0 0 0 30px var(--color-label) inset !important;
+}
+
+textarea:active, textarea:focus {
+    border: none;
+}
+
+.w100 {
+	width: 100%;
+}
+
+.color-red {
+	color: red;
+}
+
+.color-green {
+	color: green;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt40 {
+	margin-top: 40px;
+}
+
+.ta-center {
+	text-align: center;
+}
+
+.fs-20 {
+	font-size: 20px;
+}
+
+button.btn-generale {
+	height: 40px;
+	background: #B1B1B1;
+	border-radius: 10px;
+	padding: 12px 29px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #EEEEEE;
+	border: none;
+	cursor: pointer;
+
+	&.btn-apply {
+		width: 50%;
+	}
+}

@@ -1,0 +1,13 @@
+// Base
+@import "./src/scss/base/vars";
+@import "./src/scss/base/colors";
+@import "./src/scss/base/base";
+@import "./src/scss/base/forms";
+// @import "./src/scss/base/header";
+// @import "./src/scss/base/footer";
+
+// Page
+@import "./src/scss/page/auth";
+@import "./src/scss/page/dashboard";
+@import "./src/scss/page/card-candidat";
+@import "./src/scss/page/manage";
