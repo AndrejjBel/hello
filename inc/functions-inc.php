@@ -967,8 +967,8 @@ function hello_update_post_response() {
         update_post_meta( $_POST['post_id'], 'questions', $_POST['questions'] );
         update_post_meta( $_POST['post_id'], 'answer', $_POST['answer'] );
         if ( $_POST['salary'] ) {
-            update_post_meta( $post_id, 'salary', $_POST['salary'] );
-            update_post_meta( $post_id, 'currency', $_POST['currency'] );
+            update_post_meta( $_POST['post_id'], 'salary', $_POST['salary'] );
+            update_post_meta( $_POST['post_id'], 'currency', $_POST['currency'] );
         }
 
         hello_curl_api_new_new_response($_POST['answer'], $post_cand->position, $post_cand->level, $_POST['post_id']);
